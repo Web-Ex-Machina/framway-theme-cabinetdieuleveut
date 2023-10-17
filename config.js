@@ -10,6 +10,7 @@ module.exports = {
 		'background': 'colors(white)',
 		'block-background': 'colors(white)',
 		'font-color': 'colors(greystronger)',
+		'font-size'		: '16px',
 	},
 	'footer': {
 		'background': 'secondary',

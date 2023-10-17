@@ -1,2 +1,37 @@
 #footer a,
 #footer a:hover{color: footer(font-color);}
+
+.headerFW__wrapper{flex-wrap: wrap;}
+.headerFW__logo__wrapper{width: 100%; justify-content: center;}
+.headerFW__logo{padding-bottom: 0.5em;}
+.headerFW__nav__wrapper{width: 100%;justify-content: center;}
+.headerFW__nav__inline>ul>li>:not(ul){align-items: flex-end;}
+
+
+.headerFW.hover--underline{
+    .headerFW__nav__inline li{
+      &.active, &.trail, &:hover{
+        >*:not(ul){color: $primary;}
+      }
+    }
+    .headerFW__nav__panel li{
+      &.active, &.trail, &:hover{
+        >*:not(ul):not(.toggler){color: $primary;}
+      }
+    }
+}
+
+.mod_breadcrumb{padding: 1em; display: flex; justify-content: flex-end;
+  >ul{flex-wrap: wrap;}
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6{
+	color: $primary;
+}
+
+#page_title{ padding: 1em 0 ;
+  >.inside{display: flex;justify-content: space-between; flex-wrap: wrap; align-items: center;}
+  h1{margin: 0;margin-right: 1em;}
+  .mod_breadcrumb{padding: 1em 0;}
+}
